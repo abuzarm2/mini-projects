@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Modal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Global container -->
+    <div class="flex items-center justify-center min-h-screen bg-slate-100">
+        <!-- inner Container -->
+        <div class="flex flex-col rounded-2xl shadow-2xl p-6 m-3 space-y-10 bg-white md:flex-row md:space-y-0 md:space-x-10 md:m-0 md:p-16">
+            <!-- img div -->
+            <div>
+                <img src="./images/headphone.png" alt="" srcset="" class="mx-auto hover:scale-105 w-60">
+            </div>
+            <!-- Content div -->
+            <div class="flex flex-col space-y-6 mb-3 text-center md:text-left">
+                <div>
+                    <div class="text-white bg-black mx-auto px-3 py-1 text-sm rounded-full inline-block">
+                        Free Shipping
+                    </div>
+                </div>
+                <!-- product name -->
+                <div class="text-2xl font-medium max-w-sm">
+                    Razer Kraken Kitty Edt Gaming Headset Quartz
+                </div>
+                <!-- price -->
+                <div class="flex flex-col mb-4  space-y-3 text-center md:text-left">
+                    <p class="line-through">$799</p>
+                    <p class="font-bold text-5xl">$599</p>
+                    <p class="text-sm font-light text-grey-400">This offer is valid until April 3rd or as long as stock lasts!</p>
+                </div>
+                <!-- button group -->
+                <div class="group">
+                    <button class="w-full duration-150 bg-blue-700 text-white rounded-lg border-b-8 border-b-blue-700
+                    group-hover:border-t-8 group-hover:border-b-0 group-hover:border-t-blue-700">
+                        <div class="px-8 py-4 duration-150 bg-blue-500 rounded-lg group-hover:bg-blue-700">
+                            Add to cart
+                        </div>
+                    </button>
+                </div>
+                <!-- stock -->
+                <div class="flex items-center space-x-3 group">
+                    <div class="h-3 w-3 bg-green-400 rounded-full group-hover:animate-ping"></div>
+                    <div class="text-sm">50+ pcs. in stock</div>
+                </div>
+                <!-- buttons -->
+                <div class="flex flex-col space-y-4 md:space-y-0 md:space-x-4 md:flex-row">
+                    <button class="flex items-center justify-center space-x-4 border-2 rounded-lg px-8
+                    py-4 shadow-sm border-gray-300 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-150">
+                        <img src="./images/weight.png" alt="" class="w-8">
+                        <span>Add to cart</span>
+                    </button>
+                    <button class="flex items-center justify-center space-x-4 border-2 rounded-lg px-8
+                    py-4 shadow-sm border-gray-300 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-150">
+                        <img src="./images/heart.png" alt="" class="w-8">
+                        <span>Add to Wishlist</span>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
